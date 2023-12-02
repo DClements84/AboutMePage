@@ -41,6 +41,17 @@
         margin-top: 100px;
         background-color:lightcoral;
       }
+      .contactMeForm {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        justify-content: flex-end;
+        padding: 5px;
+        height: 350px;
+        width: 250px;
+        background-color: lightcoral;
+        border: 3px;
+        border-color: black;
+      }
       
       
     </style>
@@ -84,6 +95,22 @@
     <p>
         Danielle is fond of preparing nourishing meals at home as well as indulging in the occasional sweet treat. Favourite recipes include <a href="https://ambitiouskitchen.com/seriously-the-best-healthy-turkey-chili/">Healthy Turkey Chili</a> from <a href="https://ambitiouskitchen.com">Ambitious Kitchen</a> and <a href="https://wellplated.com/banana-oatmeal-muffins/">Banana Oatmeal Muffins</a> from <a href="https://wellplated.com">Well Plated</a>.
     </p>
+
+    <div class="contactMeForm">
+      <p class="contactMeTitle"><strong>Contact Me</strong></p>
+      <p>Your Name:</p>
+      <input id="nameBox" type="text" />
+      <p>Your Email:</p>
+      <input id="emailBox" type="email" />
+      <p>Your Message:</p>
+      <textarea id="textAreaBox" class="contactMeInput"></textarea>
+      <br />
+      <input type="submit" value="Send Message" id="submitButton" />
+      <p id="thankYouMessage"></p>
+    </div>
+
+    <script src="jscontactme.js"></script>
+
     <footer>
         <p>&copy;2023 About Danielle Clements. All rights reserved.</p>
     </footer>
