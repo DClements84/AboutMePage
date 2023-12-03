@@ -1,25 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My First Web Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This website is about Danielle Clements"
+    />
+    <title>Danielle Clements About</title>
+    <meta name="author" content="Danielle Clements" />
     <style>
+      .h1 {
+        text-align: center;
+      }
+
+      .imgCentre {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid black;
+      }
+
       img {
-        width: 100px;
-        height: 100px;
-        border-radius: 50px;
-        float: left;
-        margin-right: 10px;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
         object-fit: cover;
       }
 
-      .username {
+      .textCentre {
+        text-align: center;
+      }
+
+      .contentHeadingImgs {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+      }
+
+      body {
+        margin-bottom: 0px;
+        background-color: paleturquoise;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      footer {
+        text-align: center;
+        height: 50px;
+        margin-top: 50px;
+        background-color: lightcoral;
+        align-items: center;
+        padding: 7px;
+      }
+
+      .interestsContainer {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        padding: 20px;
+      }
+
+      .interestsBoxes {
+        padding: 25px;
+        width: 500px;
+        margin: 10px;
+        border: 3px solid #333;
+        background-color: aliceblue;
+        text-align: center;
+        display: inline-block;
+      }
+
+      .categoryHeadings {
         font-weight: bold;
+      }
+
+      .aboutMeParent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .aboutMeTextContainer {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+      }
+
+      .social-icon {
+        color: blue;
+      }
+
+      .social-icon:hover {
+        color: lightcoral;
+      }
+
+      .contactMeParent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: paleturquoise;
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .contactMeBox {
+        text-align: center;
+        padding: 3px;
+        margin: 3px;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 400px;
+        width: 250px;
+        background-color: lightcoral;
+      }
+
+      .contactMeMessageInput {
+        height: 75px;
       }
     </style>
   </head>
+
   <body>
-    <img src="images/GWEN.jpg" alt="An image of Gwen the Cat" />
-    <p class="username">@GwentheCat</p>
-    <p>I love to nap in the sunshine!</p>
+    <a href="mailto:dclements84@gmail.com">Email Me</a>
+    <a
+      class="social-icon"
+      href="https://facebook.com/danielle.clements.92"
+      target="_blank"
+    >
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <h1 class="h1">Danielle Clements</h1>
+    <img
+      src="images/RAIA0021.jpg"
+      class="imgCentre"
+      alt="An image of Danielle holding her daughter."
+    />
+    <p class="textCentre categoryHeadings">About Me</p>
+    <div class="AboutMeParent">
+      <div class="AboutMeTextContainer">
+        <p class="textCentre">
+          Danielle Clements has been a stay-at-home-mom for the past six years,
+          and is now considering her eventual return to the workforce. In the
+          fall of 2020, Danielle completed her B.A. from Memorial University,
+          but her prior work experience is mainly in office administration.
+          Danielle enjoys activities such as running and biking, reading and
+          gaming, and baking and cooking. She lives in Clarenville, NL, with her
+          family.
+        </p>
+      </div>
+    </div>
+
+    <h2 class="textCentre">My Interests</h2>
+    <div class="interestsContainer">
+      <div class="interestsBoxes" id="box1">
+        <img
+          src="images/bikesneakers.jpg"
+          class="contentHeadingImgs"
+          alt="An image of sneakered feet near a bicycle tire."
+        />
+        <p class="categoryHeadings">Biking & Running</p>
+        <p>
+          Danielle enjoys staying active. She likes getting outside to bike the
+          Clarenville area t’railway or Rotary Trail on her
+          <a
+            href="https://www.norco.com/bikes/mountain/trail/fluid-ht/2023-fluid-ht-1/"
+            target="_blank"
+            >Norco Fluid</a
+          >, as well as road running. In 2023 she completed her very first
+          <a href="https://www.nlaa.ca/tely10/" target="_blank">Tely 10</a> and
+          plans to run it again next year.
+        </p>
+      </div>
+      <div class="interestsBoxes" id="box2">
+        <img
+          src="images/gamingkeypic.jpg"
+          class="contentHeadingImgs"
+          alt="An image of a colourful gaming keyboard."
+        />
+        <p class="categoryHeadings">Gaming and Reading</p>
+        <p>
+          Danielle has loved reading as long as she can remember, and
+          particularly enjoys science fiction and dystopian / post-apocalyptic
+          fiction. Her favourite authors are
+          <a href="https://margaretatwood.ca/" target="_blank"
+            >Margaret Atwood</a
+          >
+          and
+          <a href="https://www.sfwriter.com/" target="_blank"
+            >Robert J. Sawyer</a
+          >. She also enjoys the occasional video game on her PC, with favourite
+          titles including
+          <a
+            href="https://www.ea.com/games/mass-effect/mass-effect-legendary-edition"
+            target="_blank"
+            >Mass Effect</a
+          >,
+          <a
+            href="https://www.ea.com/games/dragon-age/dragon-age-origins"
+            target="_blank"
+            >Dragon Age</a
+          >, and
+          <a
+            href="https://www.playstation.com/en-ca/games/horizon-zero-dawn/"
+            target="_blank"
+            >Horizon Zero Dawn</a
+          >.
+        </p>
+      </div>
+      <div class="interestsBoxes" id="box3">
+        <img
+          src="images/cookies.jpg"
+          class="contentHeadingImgs"
+          alt="A photo of cookies and the ingredients used to bake them."
+        />
+        <p class="categoryHeadings">Baking and Cooking</p>
+        <p>
+          Danielle is fond of preparing nourishing meals at home as well as
+          indulging in the occasional sweet treat. Favourite recipes include
+          <a
+            href="https://ambitiouskitchen.com/seriously-the-best-healthy-turkey-chili/"
+            target="_blank"
+            >Healthy Turkey Chili</a
+          >
+          from
+          <a href="https://ambitiouskitchen.com" target="_blank"
+            >Ambitious Kitchen</a
+          >
+          and
+          <a
+            href="https://wellplated.com/banana-oatmeal-muffins/"
+            target="_blank"
+            >Banana Oatmeal Muffins</a
+          >
+          from <a href="https://wellplated.com" target="_blank">Well Plated</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="contactMeParent">
+      <div class="contactMeBox">
+        <p><strong>Contact Me</strong></p>
+        <p>Your Name:</p>
+        <input id="nameBox" type="text" />
+        <p>Your Email:</p>
+        <input id="emailBox" type="email" />
+        <p>Your Message:</p>
+        <textarea id="textAreaBox" class="contactMeMessageInput"></textarea>
+        <br />
+        <input type="submit" value="Send Message" id="submitButton" />
+        <p id="thankYouMessage"></p>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy;2023 About Danielle Clements. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
