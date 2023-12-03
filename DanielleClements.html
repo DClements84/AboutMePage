@@ -13,6 +13,7 @@
       .h1 {
         text-align: center;
       }
+
       .imgCentre {
         display: block;
         margin-left: auto;
@@ -26,14 +27,17 @@
         border-radius: 50%;
         object-fit: cover;
       }
-      .TextCentre {
+
+      .textCentre {
         text-align: center;
       }
-      .ContentHeadingImgs {
+
+      .contentHeadingImgs {
         width: 150px;
         height: 150px;
         border-radius: 50%;
       }
+
       body {
         margin-bottom: 0px;
         background-color: paleturquoise;
@@ -52,13 +56,15 @@
         align-items: center;
         padding: 7px;
       }
-      .Interestscontainer {
+
+      .interestsContainer {
         display: flex;
         justify-content: center;
         align-items: stretch;
         padding: 20px;
       }
-      .box {
+
+      .interestsBoxes {
         padding: 25px;
         width: 500px;
         margin: 10px;
@@ -67,24 +73,29 @@
         text-align: center;
         display: inline-block;
       }
-      .bold {
+
+      .categoryHeadings {
         font-weight: bold;
       }
-      .AboutMeParent {
+
+      .aboutMeParent {
         display: flex;
         justify-content: center;
         align-items: center;
       }
-      .AboutMeTextContainer {
+
+      .aboutMeTextContainer {
         display: flex;
         justify-content: center;
         text-align: center;
         align-items: center;
         width: 90%;
       }
+
       .social-icon {
         color: blue;
       }
+
       .social-icon:hover {
         color: lightcoral;
       }
@@ -97,17 +108,23 @@
         margin: 20px;
         padding: 20px;
       }
-      .contactMeForm {
+
+      .contactMeBox {
         text-align: center;
         padding: 3px;
         margin: 3px;
         font-family: Arial, Helvetica, sans-serif;
-        height: 350px;
+        height: 400px;
         width: 250px;
         background-color: lightcoral;
       }
+
+      .contactMeMessageInput {
+        height: 75px;
+      }
     </style>
   </head>
+
   <body>
     <a href="mailto:dclements84@gmail.com">Email Me</a>
     <a
@@ -132,10 +149,10 @@
       class="imgCentre"
       alt="An image of Danielle holding her daughter."
     />
-    <p class="TextCentre bold">About Me</p>
+    <p class="textCentre categoryHeadings">About Me</p>
     <div class="AboutMeParent">
       <div class="AboutMeTextContainer">
-        <p class="TextCentre">
+        <p class="textCentre">
           Danielle Clements has been a stay-at-home-mom for the past six years,
           and is now considering her eventual return to the workforce. In the
           fall of 2020, Danielle completed her B.A. from Memorial University,
@@ -147,15 +164,15 @@
       </div>
     </div>
 
-    <h2 class="TextCentre">My Interests</h2>
-    <div class="Interestscontainer">
-      <div class="box" id="box1">
+    <h2 class="textCentre">My Interests</h2>
+    <div class="interestsContainer">
+      <div class="interestsBoxes" id="box1">
         <img
           src="images/bikesneakers.jpg"
-          class="ContentHeadingImgs"
+          class="contentHeadingImgs"
           alt="An image of sneakered feet near a bicycle tire."
         />
-        <p class="bold">Biking & Running</p>
+        <p class="categoryHeadings">Biking & Running</p>
         <p>
           Danielle enjoys staying active. She likes getting outside to bike the
           Clarenville area t’railway or Rotary Trail on her
@@ -168,13 +185,13 @@
           plans to run it again next year.
         </p>
       </div>
-      <div class="box" id="box2">
+      <div class="interestsBoxes" id="box2">
         <img
           src="images/gamingkeypic.jpg"
-          class="ContentHeadingImgs"
+          class="contentHeadingImgs"
           alt="An image of a colourful gaming keyboard."
         />
-        <p class="bold">Gaming and Reading</p>
+        <p class="categoryHeadings">Gaming and Reading</p>
         <p>
           Danielle has loved reading as long as she can remember, and
           particularly enjoys science fiction and dystopian / post-apocalyptic
@@ -204,13 +221,13 @@
           >.
         </p>
       </div>
-      <div class="box" id="box3">
+      <div class="interestsBoxes" id="box3">
         <img
           src="images/cookies.jpg"
-          class="ContentHeadingImgs"
+          class="contentHeadingImgs"
           alt="A photo of cookies and the ingredients used to bake them."
         />
-        <p class="bold">Baking and Cooking</p>
+        <p class="categoryHeadings">Baking and Cooking</p>
         <p>
           Danielle is fond of preparing nourishing meals at home as well as
           indulging in the occasional sweet treat. Favourite recipes include
@@ -235,14 +252,14 @@
     </div>
 
     <div class="contactMeParent">
-      <div class="contactMeForm">
+      <div class="contactMeBox">
         <p><strong>Contact Me</strong></p>
         <p>Your Name:</p>
         <input id="nameBox" type="text" />
         <p>Your Email:</p>
         <input id="emailBox" type="email" />
         <p>Your Message:</p>
-        <textarea id="textAreaBox" class="contactMeInput"></textarea>
+        <textarea id="textAreaBox" class="contactMeMessageInput"></textarea>
         <br />
         <input type="submit" value="Send Message" id="submitButton" />
         <p id="thankYouMessage"></p>
